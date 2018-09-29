@@ -37,10 +37,10 @@ function getContainerHeight() {
     });
     content.addEventListener("touchmove", function(e) {
       if (!click) return;
-    //   const imagesArray = Array.from(document.querySelectorAll(".image img"));
-    //   if (imagesArray.includes(e.target)) {
-    //     distanceTouch = e.touches[0].clientX - startX;
-    //   }
+      const imagesArray = Array.from(document.querySelectorAll(".image img"));
+      if (imagesArray.includes(e.target)) {
+        distanceTouch = e.touches[0].clientX - startX;
+      }
     });
     content.addEventListener("touchend", function(e) {
       if (!click) return;

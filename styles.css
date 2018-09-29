@@ -492,10 +492,11 @@ p.box-section-text {
     }
     .heading-section {
         grid-area: a;
+        align-self: start;
     }
     .box-section {
         grid-area:  b;
-        padding: 30px 20px 0 20px;
+        padding: 20px 20px 0 20px;
         
     }
     .item:last-child {
@@ -535,7 +536,6 @@ p.box-section-text {
         height: 100%;
         width: 100%;
         padding-top: 40px;
-        justify-self: center;
         -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
         -o-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
         transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
@@ -545,7 +545,6 @@ p.box-section-text {
         display: -ms-flexbox;
         display: flex;
         margin-top: 20px;
-        justify-self: center;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;

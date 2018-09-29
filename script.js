@@ -1,6 +1,6 @@
 function getContainerHeight() {
   
-    const headingSectionHeight = $(".heading-section").outerHeight(true);
+    const headingSectionHeight = $(".heading-section").height();
     const image01Height = $(".img01").outerHeight(true);
     const mainButtonHeight = $(".main-button").outerHeight(true);
     const contentPaddingTop = parseInt($(".content").css("padding-top"));
@@ -8,13 +8,7 @@ function getContainerHeight() {
     const slideIndicator = $(".slide-indicator").outerHeight(true);
     let contentHeight;
     if ($(window).width() <= 375) {
-      contentHeight =
-        headingSectionHeight +
-        image01Height +
-        mainButtonHeight +
-        contentPaddingTop +
-        boxSection +
-        slideIndicator;
+      contentHeight = headingSectionHeight + image01Height + mainButtonHeight + contentPaddingTop + boxSection + slideIndicator;
       $(".content").height(contentHeight);
     } else {
       contentHeight =
@@ -29,7 +23,7 @@ function getContainerHeight() {
   function slider() {
 
     var click = false;
-    const userTouchDistance = 50;
+    const userTouchDistance = 25;
     var startX;
     var distanceTouch;
     const content = document.querySelector(".content");
